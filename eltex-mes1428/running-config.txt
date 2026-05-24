@@ -1,1 +1,29 @@
+================================================================================
+# Eltex MES1428
+# Конфигурация с включёнными DHCP Snooping и ARP Inspection
+# Эксперимент: защита от ARP-spoofing
+# Авторы: Горский Я.В., Ткачёв Г.А.
+# Дата: 2026
+================================================================================
 
+# Building configuration...
+# ISS config ver. 10; SW ver. 10.4.3.4 (67eeccdf) for MES1428. Do not remove or edit this line
+!
+ip dhcp snooping
+!
+ip arp inspection enable
+ip arp inspection vlan 1
+!
+vlan 1
+ ip dhcp snooping
+!
+interface vlan 1
+ ip address 10.19.103.27 255.255.255.0
+!
+interface fastethernet 1/0/2
+ switchport mode access
+!
+interface fastethernet 1/0/3
+ switchport mode access
+!
+end
