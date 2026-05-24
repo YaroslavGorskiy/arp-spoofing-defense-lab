@@ -31,7 +31,7 @@
 |:---|:---|:---|
 | Cisco Catalyst 2960 | 10.19.103.30 | IOS 15.0 |
 | Eltex MES1428 | 10.19.103.27 | 10.4.3.4 |
-| MikroTik CRS326 | 10.19.103.17 | RouterOS 7.22 |
+| MikroTik CRS326 | 10.19.103.27 | RouterOS 7.22 |
 
 ---
 
